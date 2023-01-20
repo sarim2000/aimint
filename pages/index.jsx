@@ -74,7 +74,9 @@ export default function Home() {
               />
             </div>
           )}
-          <p>status: {prediction.status}</p>
+          <p>
+            status: {prediction.status == "succeeded" ? "succeded" : "working"}
+          </p>
         </div>
       )}
     </div>
